@@ -13,7 +13,7 @@ def timestr():
     return date_time
 
 def crawl(url,num=10,page=1):
-    dirname="results_"+timestr()
+    dirname="pdfs_"+timestr()
     os.mkdir(dirname)
     os.chdir(dirname)
     resp=requests.get(url).content
